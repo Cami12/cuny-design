@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CUNY Design Programs</title>
+        <script type="text/javascript" src="slides.js"></script>
+        <link rel="stylesheet" href="style_3.css">
+     
+        <script>
+            function showMenu(){
+                var menu = document.getElementById("menu");
+                if (menu.style.display==="none"){menu.style.display="block";
+                } else {
+                    menu.style.display="none"
+                }
+            }
+        </script>
+        
+    </head>
+    <body>
+        <div class="container">
+            <header class="page-header">
+                <h1> <a href="index.html"><img src="images/Logo.png" alt="Logo"></a> </h1>
+                <h2> Design programs across CUNY</h2>
+    </header>
+            
+        <nav class="main-menu"> 
+        <div class="menu-button"><button class="dropbtn"><img src="images/nav.png" width="35" alt="nav-bar" onclick="showMenu();"></button>
+        <form class="search" action="#" method="post">
+            <input type="search" placeholder="Search">
+            <button type="submit"><img src="images/search.png" width="20" alt="sub-btn"></button>
+        </form>
+        </div>
+        <div class="menubar" id="menu">
+            <ul>
+                <li class="dropdown"><a href="#">Degrees</a>
+                    <ul>
+                        <li><a href="2-YR.html">2-year</a></li>
+                        <li><a href="4-YR.html">4-year</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Topics</a>
+                    <ul>
+                        <li><a href="DT-DS.html">Digital Design</a></li>
+                        <li><a href="ANTN.html">Animation</a></li>
+                        <li><a href="ID-DS.html">Industrial Design</a></li> 
+                    </ul>                  
+                </li>
+                <li><a href="https://www.cuny.edu/admissions/apply-to-cuny/">Apply</a></li>
+            </ul>  
+        </div>
+        </nav>
+            
+            <main class="page-main">
+                
+            <div class="container-5">
+                
+                <div class="mySlides first">
+                <img src="images/ct-2.jpg" style="width:100%"> 
+                </div>    
+                <div class="mySlides second">
+                <img src="images/lg-2.jpg" style="width:100%">
+                </div>        
+                <div class="mySlides last">
+                <img src="images/mea.jpg" style="width:100%">
+                </div>
+                 
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+                
+                
+                <div class="layout">
+              <div class="grid-item animation">
+                  <p>Animation</p>
+                  <a href="ANTN.html" class="btn program">Programs</a>
+              </div>
+              <div class="grid-item digital-design">
+                  <p>Digital design</p>
+                  <a href="DT-DS.html" class="btn program">Programs</a>
+              </div>
+              <div class="grid-item industrial-design">
+                  <p>Industrial Design</p>
+                  <a href="ID-DS.html" class="btn program">Programs</a>
+              </div>
+            <div class="grid-item map">
+               <iframe src="https://snazzymaps.com/embed/238063" width="100%" height="600px" style="border:none;"></iframe>
+            </div>
+          </div>
+                
+            
+            <footer class="page-footer">    
+                CITY UNIVERSITY OF NEW YORK &copy; Copyright 2020  
+            </footer>    
+                
+            </main>
+            
+        </div>
+    </body>
+</html>
+
